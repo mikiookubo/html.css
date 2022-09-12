@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+
+/* バックグラウンド */
+.background1{
+    background-color: aqua;
+}
+.background2{
+    background-image:url(../img/task.jpeg);
+    background-size:cover ;
+}
+.background3{
+    background-attachment: fixed;
+}
+.background4{
+    background-position: center;
+}
+.background5{
+    background-repeat: repeat;
+}
+.background6{
+    background: url(../img/task.jpeg) center center/cover;
+}
+/* ボーダー */
+.border{
+    border-bottom: solid 1px pink;
+}
+.border2{
+    border-color: blue;
+}
+.border3{
+    border-left: solid 1px pink;
+}
+.border4{
+    border-right: solid 1px pink;
+}
+.border5{
+    border-top: solid 1px pink;
+}
+.border6{
+    border-style: solid;
+}
+.border7{
+    border-width: 1px;
+}
+.border8{
+    border: solid 1px pink;
+}
+/* カラー */
+.color{
+    color: blue;
+}
+/* カーソル */
+.cursor{
+    cursor: pointer;
+}
+/* ディスプレイ */
+.display{
+    display: inline-block;
+}
+/* フィルター */
+.filter{
+    filter: blur(5px) hue-rotate(120deg);
+}
+/* フロート */
+.float{
+    float: left;
+}
+.float2{
+    clear: left;
+}
+/* フォント */
+.font{
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN" ;
+}
+.font2 p{
+    font-size: larger;
+}
+.font3 p{
+    font-weight:bold ;
+}
+.font4 p{
+    font: 100;
+}
+/* 高さ */
+.height{
+    height: auto;
+}
+/* 幅 */
+.width{
+    width:auto ;
+}
+/* レタースペーシング */
+.letter-spacing{
+    letter-spacing: 1px;
+}
+/* 行間 */
+.line-height{
+    line-height: 5px;
+}
+/* リストスタイル */
+.list-style-image{
+    list-style-image: none;
+}
+.list-style{
+    list-style-position: outside;
+}
+.list-style2{
+    list-style-type:decimal ;
+}
+.list-style3{
+    list-style: inside decimal;
+}
+/* マージン */
+.margin{
+    margin-bottom: auto;
+}
+.margin2{
+    margin-left: auto;
+}
+.margin3{
+    margin-right: auto;
+}
+.margin4{
+    margin-top: auto;
+}
+.margin5{
+    margin: auto;
+}
+/* パッティング */
+.padding{
+    padding-bottom: 1px;
+}
+.padding2{
+    padding-left: 1px;
+}
+.padding3{
+    padding-right: 1px;
+}
+.padding4{
+    padding-top: 1px;
+}
+.padding5{
+    padding: auto;
+}
+.overflow{
+    overflow: scroll;
+}
+/* ポジション */
+.position{
+    position: relative;
+}
+.position2{
+    position: absolute;
+    top: 1px;
+}
+/* テキスト */
+.text{
+    text-align: center;
+}
+.text2{
+    text-decoration: solid underline palevioletred;
+}
+.text3{
+    text-indent: 10%;
+}
+/* vertical-align */
+.vertical-align{
+    vertical-align: sub;
+}
+/* 表示・非表示 */
+.visibility{
+    visibility: visible;
+}
+/* 重なり */
+.z-index{
+    z-index: 10;
+}
+.z-index2{
+    z-index: 20;
+}
+.z-index3{
+    z-index: 30;
+}
+.PseudoClass:hover{
+    cursor: pointer;
+}
+.PseudoClass2:focus-visible{
+    cursor: pointer;
+    background-color: aqua;
+}
+input[type=checkbox]:checked,.PseudoClass3{
+   background-color: blue;
+} 
+.PseudoClass4 p:first-child{
+    color: aqua;
+}
+.PseudoClass5 p:first-of-type{
+    color: aqua;
+}
+.PseudoClass6 p:last-child{
+    color: aqua;
+}
+.PseudoClass7 p:not(last-child){
+    color: aqua;
+}
+.PseudoClass8 p:nth-child(1){
+    color: aqua;
+}
+.PseudoClass9:active{
+    background-color: aqua;
+}
+.PseudoClass10::after{
+    background-color: aqua;
+}
+.PseudoClass11::before{
+    background-color: aqua;
+}
