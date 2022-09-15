@@ -1,0 +1,501 @@
+/* --------------------------------------------------
+BASE
+-------------------------------------------------- */
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Open Sans", Meiryo, sans-serif;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  
+  /* --------------------------------------------------
+  CUSTOM
+  -------------------------------------------------- */
+  
+  .Main {
+    background: url(../img/main.jpg) center center/cover no-repeat;
+    height: 50vh;
+    padding-bottom: 45%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Main__title {
+    color: #fff;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .Main__subTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Main__subTitle {
+      font-size: 4vw;
+    }
+  }
+  
+  .Main__mainTitle {
+    font-size: 4rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Main__mainTitle {
+      font-size: 10vw;
+    }
+  }
+  
+  .Header {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .Header__inner {
+    padding: 1.5rem 0 .5rem;
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .Header__inner {
+      width: 85%;
+    }
+  }
+  
+  .Header__title {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .Header__sns {
+    width: 30px;
+    -webkit-transition: .2s, ease-in;
+    -o-transition: .2s, ease-in;
+    transition: .2s, ease-in;
+  }
+  
+  .Header__sns:hover {
+    opacity: .65;
+  }
+  
+  .Section {
+    padding: 10rem 0;
+  }
+  
+  .Section__title {
+    color: #5FC9B0;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 4rem;
+  }
+  
+  .Section__title:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #5FC9B0;
+    border-radius: 2px;
+  }
+  
+  .Section__memberName {
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  
+  /* --------------------------------------------------
+  ABOUT
+  -------------------------------------------------- */
+  .About {
+    background-color: #ffffff;
+  }
+  
+  .About__inner {
+    padding: 1.5rem 0 .5rem;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .About__inner {
+      width: 85%;
+    }
+  }
+  
+  .About__message {
+    color: #545A57;
+    text-align: center;
+    line-height: 3;
+  }
+  /* -----------------------------
+  ----------------------------- */
+  
+  
+  /* -----------------------------
+  虫食いセクション ①
+  ----------------------------- */
+  
+  /* --------------------------------------------------
+  .SEMINAR
+  -------------------------------------------------- */
+  .Mainbox__seminar{
+    background-color: lightcyan;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 70px;
+  }
+  .Seminar__img{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  img{
+    width:100%;
+    height: 100%; 
+  }
+  .Seminar__img p{
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: #fff;
+  }
+  .Seminar__img1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+  }
+
+    
+  .Seminar__img2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .Seminar__img3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    position: relative;
+  }
+  .Seminar__img4{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    position: relative;
+  }
+  .Seminar__img5{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    position: relative;
+  }
+  
+  /* -----------------------------
+  ----------------------------- */
+  
+  
+  
+  /* -----------------------------
+  虫食いセクション ②
+  ----------------------------- */
+  
+  
+  /* --------------------------------------------------
+  GALLERY
+  -------------------------------------------------- */
+  .Gallery__img{
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns:0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows:0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  }
+  .Gallery__img1{
+    grid-column: 1/2;
+    grid-row:1/3 ;
+    
+  }
+  .Gallery__img2{
+    grid-column:2/3 ;
+    grid-row: 1/3;
+  }
+  .Gallery__img3{
+    grid-column:3/5 ;
+    grid-row:1/2 ;
+  }
+  .Gallery__img4{
+    grid-column:5/7;
+    grid-row:1/2 ;
+  }
+  .Gallery__img5{
+    grid-column:7/8 ;
+    grid-row: 1/3;
+  }
+  .Gallery__img6{
+    grid-column:1/3 ;
+    grid-row:3/5 ;
+  }
+  .Gallery__img7{
+    grid-column:3/5 ;
+    grid-row: 2/4;
+  }
+  .Gallery__img8{
+    grid-column:5/7 ;
+    grid-row: 2/4;
+  }
+  .Gallery__img9{
+    grid-column:7/8 ;
+    grid-row:3/5 ;
+  }
+  .Gallery__img10{
+    grid-column:1/3 ;
+    grid-row:5/6 ;
+  }
+  .Gallery__img11{
+    grid-column:3/4;
+    grid-row: 4/6;
+  }
+  .Gallery__img12{
+    grid-column:7/8 ;
+    grid-row:5/7 ;
+  }
+  .Gallery__img13{
+    grid-column:6/7 ;
+    grid-row:4/6 ;
+  }
+  .Gallery__img14{
+    grid-column:4/6 ;
+    grid-row: 4/6;
+  }
+
+  
+  /* -----------------------------
+  ----------------------------- */
+  
+  /* --------------------------------------------------
+  FOOTER
+  -------------------------------------------------- */
+  
+  .Footer {
+    background-color: #272E2B;
+  }
+  
+  .Footer__inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .Footer__inner {
+      width: 85%;
+    }
+  }
+  
+  .Footer__inner p {
+    color: #fff;
+    text-align: center;
+  }
+ 
+  @media screen and (max-width:380px) {
+    .Seminar__img{
+      grid-template-columns:1fr;
+      grid-template-rows:repeat(5,1fr);
+    }
+    .Seminar__img1{
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    .Seminar__img2{
+      grid-row: 2/3; 
+      grid-column: 1/2;
+    }
+    .Seminar__img3{
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+    .Seminar__img4{
+      grid-row: 4/5;
+      grid-column: 1/2;
+    }
+    .Seminar__img5{
+      grid-row: 5/6;
+      grid-column: 1/2;
+    }  
+    .Gallery__img{
+      grid-template-rows:repeat(3,0.5fr);
+      grid-template-columns:repeat(2,0.5fr);
+    }
+    .Gallery__img1{
+      grid-column: 1/2;
+      grid-row:1/3;
+    }
+    .Gallery__img2{
+      grid-column:2/3;
+      grid-row: 1/3;
+    }
+    .Gallery__img3{
+      grid-column:1/3;
+      grid-row:3/4;
+    }
+    .Gallery__img4{
+     display: none;
+    }
+    .Gallery__img5{
+      display: none;
+    }
+    .Gallery__img6{
+      display: none;
+    }
+    .Gallery__img7{
+      display: none;
+    }
+    .Gallery__img8{
+      display: none;
+    }
+    .Gallery__img9{
+      display: none;
+    }
+    .Gallery__img10{
+      display: none;
+    }
+    .Gallery__img11{
+      display: none;
+    }
+    .Gallery__img12{
+      display: none;
+    }
+    .Gallery__img13{
+      display: none;
+    }
+    .Gallery__img14{
+      display: none;
+    }
+  }
+  @media (min-width:381px) and (max-width: 820px){
+    .Seminar__img{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }    
+    .Seminar__img1{
+      grid-row: 1/2;
+      grid-column: 1/2;
+      position: relative;
+    }
+    .Seminar__img2{
+      grid-row: 1/2;
+      grid-column: 2/3;
+      position: relative;
+    }
+    .Seminar__img3{
+      grid-row: 2/3;
+      grid-column: 1/2;
+      position: relative;
+    }
+    .Seminar__img4{
+      grid-row: 2/3;
+      grid-column: 2/3;
+      position: relative;
+    }
+    .Seminar__img5{
+      grid-row: 3/4;
+      grid-column: 1/2;
+      position: relative;
+    }
+    .Gallery__img{
+      grid-template-rows:repeat(15,0.5fr);
+      grid-template-columns:repeat(3,0.5fr);
+    }
+    .Gallery__img1{
+      grid-column: 1/2;
+      grid-row:1/3 ;
+      
+    }
+    .Gallery__img2{
+      grid-column:2/3;
+      grid-row: 1/3;
+    }
+    .Gallery__img3{
+      grid-column:3/4;
+      grid-row:1/3 ;
+    }
+    .Gallery__img4{
+      grid-column:1/3;
+      grid-row:3/4;
+    }
+    .Gallery__img5{
+      grid-column:3/4;
+      grid-row: 3/5;
+    }
+    .Gallery__img6{
+      grid-column:1/3;
+      grid-row:3/5 ;
+    }
+    .Gallery__img7{
+      grid-column:1/3;
+      grid-row: 5/7;
+    }
+    .Gallery__img8{
+      grid-column:1/3;
+      grid-row: 5/7;
+    }
+    .Gallery__img9{
+      grid-column:3/4 ;
+      grid-row:5/7 ;
+    }
+    .Gallery__img10{
+      grid-column:1/3 ;
+      grid-row:7/9;
+    }
+    .Gallery__img11{
+      grid-column:3/4;
+      grid-row: 7/9;
+    }
+    .Gallery__img12{
+      grid-column:1/3;
+      grid-row:9/11;
+    }
+    .Gallery__img13{
+      grid-column:3/4 ;
+      grid-row:9/11;
+    }
+    .Gallery__img14{
+      grid-column:1/3 ;
+      grid-row: 11/13;
+    }
+  }
+ 
