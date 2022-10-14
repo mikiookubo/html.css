@@ -8,6 +8,5 @@ const eighteenYearsold = () =>{
         }else{
             console.log(i.name+"さんは18歳未満のため参加できません");
         }
-        
     })};
     console.log(eighteenYearsold());
