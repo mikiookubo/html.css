@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="../js/for_05.js"></script>
+</head>
+<body>
+  <main>
+    <!-- <p id="p"></p> -->
+    <table>
+      <thead>
+        <tr>
+          <th class="null"></th>
+          <th>お名前</th>
+          <th class="red">年齢</th>
+          <th class="orange">住所</th>
+        </tr>
+      </thead>
+      <tbody id="participantList"></tbody>
+    </table>
+    <style>
+      table{
+        border-collapse: collapse;
+      }
+      th,tr,td{
+        border: solid black 1px;
+      }
+      th{
+        padding:10px 50px;
+      }
+      .null{
+        padding: 10px 30px;
+      }
+      .red{
+        background-color: brown;
+      }
+      .orange{
+        background-color: orange;
+      }
+    </style>
+    <input type="button" value="リスト表示" id="btn" onclick="check()">
+    <style>
+      #btn{
+        display: block;
+        margin: 30px 180px;
+        padding: 10px 20px;
+      }
+    </style>
+  </main>
+</body>
+</html>
